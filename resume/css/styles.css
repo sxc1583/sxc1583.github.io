@@ -3,7 +3,7 @@ body{
 }
 main{
   margin: 5% auto;
-  width: 80%;
+  width: 700;
 }
 .main-title{
   font-size: 40px;
@@ -30,7 +30,6 @@ img{
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .3);
 }
 hr{
-  margin-top: 5%;
   color: gray;
   border:solid 2px;
 }
