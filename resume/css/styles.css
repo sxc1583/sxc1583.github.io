@@ -1,0 +1,44 @@
+body{
+  font-family: 'Dosis', sans-serif;
+}
+main{
+  margin: 5% auto;
+  width: 80%;
+}
+.main-title{
+  font-size: 40px;
+}
+.sub-title{
+  color: purple;
+}
+.festival{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.date{
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.teacher{
+  border: solid 1px #cccccc;
+  padding:10px;
+}
+.info{
+  font-size:20px;
+}
+img{
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .3);
+}
+hr{
+  margin-top: 5%;
+  color: gray;
+  border:solid 2px;
+}
+a:link{
+  color: purple;
+  text-decoration: none;
+}
+a:hover{
+  color: magenta;
+  text-decoration: underline;
+}
