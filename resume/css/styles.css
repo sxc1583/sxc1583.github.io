@@ -1,5 +1,6 @@
 body{
   font-family: 'Dosis', sans-serif;
+  background-color: pink;
 }
 main{
   margin: 5% auto;
@@ -7,6 +8,7 @@ main{
 }
 .main-title{
   font-size: 40px;
+  color: white;
 }
 .sub-title{
   color: purple;
@@ -20,6 +22,7 @@ main{
   padding: 10px;
 }
 .teacher{
+  background-color: lightgray;
   border: solid 1px #cccccc;
   padding:10px;
 }
