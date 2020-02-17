@@ -1,0 +1,39 @@
+body{
+  color:black;
+}
+.main-title{
+  color:maroon;
+}
+#main-text{
+  color:green;
+}
+p{
+  color:blue;
+  background-color: white;
+}
+div{
+  width:200px;
+  height:200px;
+  border:solid 4px #333333;
+  margin:10px;
+  padding:10px;
+  display:inline-block;
+}
+body{
+  background: pink;
+}
+.color-demo{
+  background:rgba(51,93,23, .5);
+  width: 250px;
+  height: 250px;
+}
+.color-demo:hover{
+  background-color:rgba(51,93,23, .8)
+}
+.image-bg{
+  
+}
+.image-bg:hover{
+  background-image:url("../images/StampsQuartet4.png");
+  background-size: contain;
+}
