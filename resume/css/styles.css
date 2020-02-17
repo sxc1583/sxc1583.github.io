@@ -22,8 +22,7 @@ main{
   padding: 10px;
 }
 .teacher{
-  background-color: lightgray;
-  border: solid 1px #cccccc;
+  border: solid 3px white;
   padding:10px;
 }
 .info{
