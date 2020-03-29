@@ -1,0 +1,351 @@
+html{
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+*, *:before, *after {
+  box-sizing: inherit;
+}
+h1, h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.main-wrapper{
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 20px;
+}
+header {
+  background: salmon;
+}
+.main-title {
+  font-size: 70px;
+  color: white;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+header li{
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: 1px solid burlywood;
+  padding: 10px;
+}
+main {
+  background-color: antiquewhite;
+}
+.trending-article h2, h3{
+  text-align: center;
+}
+.article-image{
+  height: 400px;
+  width: 400px;
+  background-image: url(../images/fastfood-image.jpg);
+  background-size: cover;
+  margin: auto;
+}
+hr {
+  margin-top: 40px;
+}
+.sub-content{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.sub-content h2{
+  text-align: center;
+}
+.recommendations{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.recipe{
+  padding: 20px;
+  width: 300px;
+  background-color: white;
+  margin: auto;
+}
+.recipe-image{
+  height: 300px;
+  width: 300px;
+  background-image: url(../images/truffles.jpg);
+  background-size: cover;
+  border: solid 1px;
+  margin: auto;
+}
+.restaurant{
+  padding: 20px;
+  width: 300px;
+  background-color: white;
+  margin: auto;
+}
+.restaurant-image{
+  height: 300px;
+  width: 300px;
+  background-image: url(../images/crust.jpg);
+  background-size: cover;
+  border: solid 1px;
+  margin: auto;
+}
+.gallery{
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+}
+.gallery-item1{
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-image: url(../images/image1.jpg);
+  background-size: cover;
+}
+.gallery-item2{
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-image: url(../images/image2.jpg);
+  background-size: cover;
+}
+.gallery-item3{
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-image: url(../images/image3.jpg);
+  background-size: cover;
+}
+.gallery-item4{
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-image: url(../images/image4.jpg);
+  background-size: cover;
+}
+.gallery-item5{
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-image: url(../images/image5.jpg);
+  background-size: cover;
+}
+.gallery-item6{
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-image: url(../images/image6.jpg);
+  background-size: cover;
+}
+.gallery-item7{
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-image: url(../images/image7.jpg);
+  background-size: cover;
+}
+.gallery-item8{
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-image: url(../images/image8.jpg);
+  background-size: cover;
+}
+.gallery-item9{
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-image: url(../images/image9.jpg);
+  background-size: cover;
+}
+.gallery-item10{
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-image: url(../images/image10.jpg);
+  background-size: cover;
+}
+.gallery p {
+  visibility: hidden;
+}
+.gallery-item1:hover p {
+  visibility: visible;
+  background-color: rgba(0,0,0,.5);
+  color:white;
+  margin-left:90px;
+  padding:10px;
+  text-align: right;
+}
+.gallery-item2:hover p {
+  visibility: visible;
+  background-color: rgba(0,0,0,.5);
+  color:white;
+  margin-left:90px;
+  padding:10px;
+  text-align: right;
+}
+.gallery-item3:hover p {
+  visibility: visible;
+  background-color: rgba(0,0,0,.5);
+  color:white;
+  margin-left:90px;
+  padding:10px;
+  text-align: right;
+}
+.gallery-item4:hover p {
+  visibility: visible;
+  background-color: rgba(0,0,0,.5);
+  color:white;
+  margin-left:90px;
+  padding:10px;
+  text-align: right;
+}
+.gallery-item5:hover p {
+  visibility: visible;
+  background-color: rgba(0,0,0,.5);
+  color:white;
+  margin-left:90px;
+  padding:10px;
+  text-align: right;
+}
+.gallery-item6:hover p {
+  visibility: visible;
+  background-color: rgba(0,0,0,.5);
+  color:white;
+  margin-left:90px;
+  padding:10px;
+  text-align: right;
+}
+.gallery-item7:hover p {
+  visibility: visible;
+  background-color: rgba(0,0,0,.5);
+  color:white;
+  margin-left:90px;
+  padding:10px;
+  text-align: right;
+}
+.gallery-item8:hover p {
+  visibility: visible;
+  background-color: rgba(0,0,0,.5);
+  color:white;
+  margin-left:90px;
+  padding:10px;
+  text-align: right;
+}
+.gallery-item9:hover p {
+  visibility: visible;
+  background-color: rgba(0,0,0,.5);
+  color:white;
+  margin-left:90px;
+  padding:10px;
+  text-align: right;
+}
+.gallery-item10:hover p {
+  visibility: visible;
+  background-color: rgba(0,0,0,.5);
+  color:white;
+  margin-left:90px;
+  padding:10px;
+  text-align: right;
+}
+footer {
+  background: burlywood;
+}
+.footer h3, address{
+  text-align: center;
+}
+#to-top {
+  text-align: center;
+}
+header, main, footer{
+  padding: 20px;
+}
+@media only screen and (min-width: 670px) {
+  header ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .article-image{
+    float: left;
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .trending-article h2, h3{
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .recommendations{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recipe{
+    margin: 0;
+    margin-left: auto;
+  }
+  .recipe-image{
+    margin: 0;
+    margin-left: auto;
+  }
+  .restaurant{
+    margin: 0;
+  }
+  .restaurant-image{
+    margin: 0;
+  }
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .gallery-item1{
+    margin: 0;
+    margin-left: auto;
+  }
+  .gallery-item2{
+    margin: 0;
+    margin-right: auto;
+  }
+  .gallery-item3{
+    margin: 0;
+    margin-left: auto;
+  }
+  .gallery-item4{
+    margin: 0;
+    margin-right: auto;
+  }
+  .gallery-item5{
+    margin: 0;
+    margin-left: auto;
+  }
+  .gallery-item6{
+    margin: 0;
+    margin-right: auto;
+  }
+  .gallery-item7{
+    margin: 0;
+    margin-left: auto;
+  }
+  .gallery-item8{
+    margin: 0;
+    margin-right: auto;
+  }
+  .gallery-item9{
+    margin: 0;
+    margin-left: auto;
+  }
+  .gallery-item10{
+    margin: 0;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .sub-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

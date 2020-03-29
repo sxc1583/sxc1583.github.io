@@ -1,0 +1,28 @@
+.main_wrapper{
+  display:grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-gap: 10px;
+  grid-template-rows: repeat(10,1fr);
+}
+.menu{
+  background-color: gray;
+  grid-column: 1/11;
+  grid-row: 1;
+}
+.navigation{
+  background-color: purple;
+  grid-column: 2/10;
+  grid-row: 2;
+}
+.title{
+  background-color: cyan;
+}
+.description{
+  background-color: blue;
+}
+.misc{
+  background-color: pink;
+}
+.image{
+  background-color: lime;
+}
