@@ -46,10 +46,11 @@ main {
   text-align: center;
 }
 .article-image{
+  width: 100%;
   height: 400px;
-  width: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-image: url(../images/fastfood-image.jpg);
-  background-size: cover;
   margin: auto;
 }
 hr {
@@ -68,13 +69,13 @@ hr {
 }
 .recipe{
   padding: 20px;
-  width: 300px;
+  width: 200px;
   background-color: white;
   margin: auto;
 }
 .recipe-image{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   background-image: url(../images/truffles.jpg);
   background-size: cover;
   border: solid 1px;
@@ -82,13 +83,13 @@ hr {
 }
 .restaurant{
   padding: 20px;
-  width: 300px;
+  width: 200px;
   background-color: white;
   margin: auto;
 }
 .restaurant-image{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   background-image: url(../images/crust.jpg);
   background-size: cover;
   border: solid 1px;
@@ -99,71 +100,71 @@ hr {
   grid-template-rows: repeat(10, 1fr);
 }
 .gallery-item1{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   background-image: url(../images/image1.jpg);
   background-size: cover;
 }
 .gallery-item2{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   background-image: url(../images/image2.jpg);
   background-size: cover;
 }
 .gallery-item3{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   background-image: url(../images/image3.jpg);
   background-size: cover;
 }
 .gallery-item4{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   background-image: url(../images/image4.jpg);
   background-size: cover;
 }
 .gallery-item5{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   background-image: url(../images/image5.jpg);
   background-size: cover;
 }
 .gallery-item6{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   background-image: url(../images/image6.jpg);
   background-size: cover;
 }
 .gallery-item7{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   background-image: url(../images/image7.jpg);
   background-size: cover;
 }
 .gallery-item8{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   background-image: url(../images/image8.jpg);
   background-size: cover;
 }
 .gallery-item9{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   background-image: url(../images/image9.jpg);
   background-size: cover;
 }
 .gallery-item10{
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: auto;
   background-image: url(../images/image10.jpg);
   background-size: cover;
@@ -262,6 +263,73 @@ footer {
 }
 header, main, footer{
   padding: 20px;
+}
+@media only screen and (min-width: 380px) {
+  .recipe{
+    padding: 20px;
+    width: 300px;
+  }
+  .recipe-image{
+    height: 300px;
+    width: 300px;
+  }
+  .restaurant{
+    padding: 20px;
+    width: 300px;
+  }
+  .restaurant-image{
+    height: 300px;
+    width: 300px;
+  }
+  .gallery-item1{
+    height: 300px;
+    width: 300px;
+  }
+  .gallery-item2{
+    height: 300px;
+    width: 300px;
+  }
+  .gallery-item3{
+    height: 300px;
+    width: 300px;
+  }
+  .gallery-item4{
+    height: 300px;
+    width: 300px;
+  }
+  .gallery-item5{
+    height: 300px;
+    width: 300px;
+  }
+  .gallery-item6{
+    height: 300px;
+    width: 300px;
+  }
+  .gallery-item7{
+    height: 300px;
+    width: 300px;
+  }
+  .gallery-item8{
+    height: 300px;
+    width: 300px;
+  }
+  .gallery-item9{
+    height: 300px;
+    width: 300px;
+  }
+  .gallery-item10{
+    height: 300px;
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 440px) {
+  .article-image{
+    height: 400px;
+    width: 400px;
+    background-image: url(../images/fastfood-image.jpg);
+    background-size: cover;
+    margin: auto;
+  }
 }
 @media only screen and (min-width: 670px) {
   header ul {
