@@ -1,0 +1,84 @@
+body{
+  font-family: 'Heebo', sans-serif;
+  background-image: url(../images/eggbackground.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+header{
+  text-align: center;
+}
+h1{
+  color:#f4ef88;
+  font-size:3rem;
+}
+h2{
+  font-size: 2rem;
+}
+p, li{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+}
+hr{
+  margin-top: 1.5rem;
+}
+.intro p{
+  font-size: 1.75rem;
+}
+img{
+  border-radius: 1rem;
+}
+button{
+  background: #000000;
+  padding:.5rem 1rem;
+  font-size: 1.5rem;
+  color:#f4ef88;
+  border-radius: 1rem;
+}
+.main-wrapper{
+  padding: 20px;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  border-radius: 1rem;
+}
+.main-wrapper section{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+}
+.image{
+  margin: auto;
+}
+.text{
+  text-align: center;
+  margin: auto;
+}
+.text li{
+  text-align: left;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.final{
+  text-align: center;
+  font-size:2rem;
+  color:#af633c;
+}
+@media only screen and (min-width: 990px) {
+  hr{
+    display: none;
+  }
+  .main-wrapper section{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .image{
+    grid-column: 1/2;
+  }
+  .text{
+    text-align: left;
+    grid-column: 2/3;
+  }
+}

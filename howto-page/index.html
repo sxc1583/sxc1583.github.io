@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- A few things I want to note about this website: I couldn't get the append function to work like I wanted to
+(it kept duplicating .final every time I re-entered the page & I couldn't think of a way to place .final outside of
+the grid I created). I also felt like my .css jquery element didn't really do anything, but I still included it for
+the sake of meeting the requirement for the assignment. Perhaps I can schedule office hours to discuss how I can
+fix these issues for later assignments. Thank you for all your work and help in the midst of these hectic times! -Soohyun Chae-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device width, initial scale=1">
+    <title>Easy Scrambled Eggs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1> Easy Scrambled Eggs </h1>
+        <h2> For All Your Breakfast Needs </h2>
+      </header>
+        <div class="main-wrapper">
+          <section class="intro">
+            <div class="image">
+              <img src="images/egg.jpg" alt="egg with bread" class="responsive">
+            </div>
+            <div class="text">
+              <hr>
+              <p> Searching for how to make this breakfast staple? </p>
+              <p> Just follow these step-by-step instructions to learn how! </p>
+              <p> Ready to Start? </p>
+              <button class="step1" type="button" name="ready">Ready!</button>
+            </div>
+          </section>
+          <section class="ingredients hide" style="display: none">
+            <div class="image">
+              <img src="images/foodiesfeed.jpg" alt="carton of eggs" class="responsive">
+            </div>
+            <div class="text">
+              <hr>
+              <h2> Ingredients </h2>
+              <ul>
+                <li> Eggs </li>
+                <li> 1 tbsp/egg of water, cream, or milk </li>
+                <li> Pinch of Salt </li>
+                <li> Butter </li>
+                <li> Nonstick Skillet </li>
+                <li> Spatula </li>
+                <li> Optional: Fresh Chopped Herbs, Ham, or Cheese </li>
+              </ul>
+            </div>
+            <button class="back1" type="button" name="back">Back</button>
+            <button class="step2" type="button" name="next">Next</button>
+          </section>
+          <section class="beat hide" style="display: none">
+            <div class="image">
+              <img src="images/beatenegg.jpg" alt="eggs in a clear bowl" class="responsive">
+            </div>
+            <div class="text">
+              <hr>
+              <h2> Beat the Eggs </h2>
+              <p>Beat your eggs until they're completely blended. Add a little water, cream or milk to make them tender. Use 1 tablespoon of liquid per egg. Add a pinch of salt.</p>
+            </div>
+            <button class="back2" type="button" name="back">Back</button>
+            <button class="step3" type="button" name="next">Next</button>
+          </section>
+          <section class="prep hide" style="display: none">
+            <div class="image">
+              <img src="images/pan.jpg" alt="three pans on stove" class="responsive">
+            </div>
+            <div class="text">
+              <hr>
+              <h2> Prep the Pan </h2>
+              <p>Next, heat a nonstick skillet over a medium-low flame and toss in a pat of butter. Make sure the butter coats the pan.</p>
+            </div>
+            <button class="back3" type="button" name="back">Back</button>
+            <button class="step4" type="button" name="next">Next</button>
+          </section>
+          <section class="add hide" style="display: none">
+            <div class="image">
+              <img src="images/egginpan.jpg" alt="beaten egg being poured in pan" class="responsive">
+            </div>
+            <div class="text">
+              <hr>
+              <h2> Add the Eggs </h2>
+              <p>Then, pour in the eggs. Pause to let them heat slightly — gentle heat is essential.</p>
+            </div>
+            <button class="back4" type="button" name="back">Back</button>
+            <button class="step5" type="button" name="next">Next</button>
+          </section>
+          <section class="cook hide" style="display: none">
+            <div class="image">
+              <img src="images/cookingegg.jpg" alt="scrambled egg being cooked" class="responsive">
+            </div>
+            <div class="text">
+              <hr>
+              <h2> Cook the Eggs </h2>
+              <p>Move the eggs across the pan like a bulldozer so the eggs cook evenly. This takes a little time, but it's worth it.</p>
+              <p> Optional: As the eggs start to set, add chopped fresh herbs, or bits of ham or cheese. </p>
+            </div>
+            <button class="back5" type="button" name="back">Back</button>
+            <button class="step6" type="button" name="next">Next</button>
+          </section>
+          <section class="ready hide" style="display: none">
+            <div class="image">
+              <img src="images/finishedegg.jpg" alt="egg with toast" class="responsive">
+            </div>
+            <div class="text">
+              <hr>
+              <h2> Ready to Eat </h2>
+              <p>Turn your eggs onto warmed plates and dig in!</p>
+              <button class="home" type="button" name="home">Back to Start</button>
+            </div>
+          </section>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".step1").click(function(){
+          $(".intro").slideUp();
+          $(".ingredients").slideDown();
+        });
+        $(".back1").click(function(){
+          $(".ingredients").slideUp();
+          $(".intro").slideDown();
+        });
+        $(".step2").click(function(){
+          $(".ingredients").slideUp();
+          $(".beat").slideDown();
+        });
+        $(".back2").click(function(){
+          $(".beat").slideUp();
+          $(".ingredients").slideDown();
+        });
+        $(".step3").click(function(){
+          $(".beat").slideUp();
+          $(".prep").slideDown();
+        });
+        $(".back3").click(function(){
+          $(".prep").slideUp();
+          $(".beat").slideDown();
+        });
+        $(".step4").click(function(){
+          $(".prep").slideUp();
+          $(".add").slideDown();
+        });
+        $(".back4").click(function(){
+          $(".add").slideUp();
+          $(".prep").slideDown();
+        });
+        $(".step5").click(function(){
+          $(".add").slideUp();
+          $(".cook").slideDown();
+        });
+        $(".back5").click(function(){
+          $(".cook").slideUp();
+          $(".add").slideDown();
+        });
+        $(".step6").click(function(){
+          $(".cook").slideUp();
+          $(".ready").css("display", "grid");
+          $(".ready").append("<p class='final'>Enjoy!</p>")
+        });
+        $(".home").click(function(){
+          $(".ready").slideUp();
+          $(".ingredients").slideDown();
+        });
+      });
+    </script>
+  </body>
+</html>
