@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- A few things I want to note about this website: I couldn't get the append function to work like I wanted to
-(it kept duplicating .final every time I re-entered the page & I couldn't think of a way to place .final outside of
-the grid I created). I also felt like my .css jquery element didn't really do anything, but I still included it for
-the sake of meeting the requirement for the assignment. Perhaps I can schedule office hours to discuss how I can
-fix these issues for later assignments. Thank you for all your work and help in the midst of these hectic times! -Soohyun Chae-->
+<!--One thing I want to note about this website: I couldn't figure out a way to center inline-block elements
+after changing the display from grid to inline-block as the parent container is still in display: grid. Perhaps
+you could help me with this when you give feedback on my website? I left the last page a little bit broken for
+the time being. Also, the prepend function keeps duplicating the .final (in a funny way), but I was wondering if there
+was a way to prevent that. Thank you for all your work and help in the midst of these hectic times! -Soohyun Chae-->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -158,8 +158,8 @@ fix these issues for later assignments. Thank you for all your work and help in 
         });
         $(".step6").click(function(){
           $(".cook").slideUp();
-          $(".ready").css("display", "grid");
-          $(".ready").append("<p class='final'>Enjoy!</p>")
+          $(".ready").css("display", "inline-block");
+          $(".ready").prepend("<p class='final'>...And You're Done!</p>")
         });
         $(".home").click(function(){
           $(".ready").slideUp();
