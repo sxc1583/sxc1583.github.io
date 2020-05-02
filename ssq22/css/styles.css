@@ -66,9 +66,8 @@ main {
   margin-top: 51px;
 }
 .opening-content {
-  position: absolute;
   width: 100%;
-  height: calc(100% - 51px);
+  height: 100vh;
   background-image: url(../images/homepage.jpg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -91,7 +90,6 @@ main {
   margin-top: 1rem;
 }
 .sub-content {
-  position: absolute;
   top: 100%;
   width: 100%;
   height: calc(100% - 51px);
@@ -116,12 +114,10 @@ main {
   text-align: center;
 }
 .calendar {
-  position: absolute;
-  width: 50%;
+  width: 100%;
   height: calc(25% - 51px);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
 .calendar-icon {
@@ -135,7 +131,6 @@ main {
   width: 200px;
 }
 .footer {
-  position: absolute;
   width: 100%;
   bottom: 0;
   background-color:black;
