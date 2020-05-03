@@ -277,15 +277,14 @@ main {
   padding: 20px;
 }
 button {
-  background-color: rgba(0, 0, 0, 0);
-  color: black;
-  border: 2px solid black;
-  transition-duration: 0.4s;
+  background-color: transparent;
+  border: none;
+  border-top: 2px solid black;
   cursor: pointer;
-  margin: 4px 2px;
+  padding: 1rem 0;
 }
 button:hover {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 .main-wrapper{
@@ -308,17 +307,11 @@ button:hover {
 .event-description {
   grid-column: 2/5;
   text-align: left;
+  margin-right: 20px;
   margin-left: 20px;
 }
 .event-title {
   font-size: 2rem;
-}
-.event-details {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.text {
-  grid-column: 1/2;
 }
 .text h3 {
   font-size: 1.2rem;
@@ -328,12 +321,11 @@ button:hover {
   color: white;
 }
 .event-pic {
-  grid-column: 2/3;
   width: 100%;
   max-width: 300px;
   height: auto;
   margin: auto;
-  padding: 1rem;
+  margin-bottom: 15px;
 }
 .contact {
   width: 100%;
