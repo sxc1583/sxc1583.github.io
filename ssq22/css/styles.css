@@ -257,10 +257,9 @@ main {
   font-size: 3rem;
   padding: 20px;
 }
-.html5gallery {
-  margin: auto;
-  data-width: 200px;
-  data-height: 200px;
+.media-gallery{
+  width:100%;
+  margin:0 auto;
 }
 .events {
   width: 100%;
@@ -275,6 +274,9 @@ main {
   color: white;
   font-size: 3rem;
   padding: 20px;
+}
+.side-bar_event button {
+  width: 100%;
 }
 button {
   background-color: transparent;
@@ -438,6 +440,10 @@ button:hover {
   }
   main {
     margin-top: 51px;
+  }
+  .media-gallery{
+    width:70%;
+    margin:0 auto;
   }
 }
 @media only screen and (min-width: 660px) {
