@@ -282,6 +282,7 @@ button {
   border-top: 2px solid black;
   cursor: pointer;
   padding: 1rem 0;
+  margin: auto;
 }
 button:hover {
   background-color: rgba(0, 0, 0, 0.5);
@@ -293,11 +294,10 @@ button:hover {
   width: 80%;
   border-radius: 1rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
 }
 .side-bar_event {
-  grid-column: 1/2;
-  border-right: 0.2rem solid black;
+  border-bottom: 0.2rem solid black;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -305,7 +305,6 @@ button:hover {
   text-align: center;
 }
 .event-description {
-  grid-column: 2/5;
   text-align: left;
   margin-right: 20px;
   margin-left: 20px;
@@ -322,10 +321,10 @@ button:hover {
 }
 .event-pic {
   width: 100%;
-  max-width: 300px;
   height: auto;
   margin: auto;
   margin-bottom: 15px;
+  float: left;
 }
 .contact {
   width: 100%;
@@ -445,6 +444,26 @@ button:hover {
   .events {
     height: 100vh;
     padding-bottom: 0;
+  }
+  .event-pic {
+    float: right;
+    width: 200px;
+    height: auto;
+  }
+  .main-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .side-bar_event {
+    grid-column: 1/2;
+    border-right: 0.2rem solid black;
+    border-bottom: none;
+  }
+  .side-bar_title {
+    text-align: center;
+  }
+  .event-description {
+    grid-column: 2/5;
   }
 }
 @media only screen and (min-width: 665px) {
